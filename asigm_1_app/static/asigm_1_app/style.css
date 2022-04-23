@@ -1,0 +1,10 @@
+li a{
+    color: green;
+}
+
+li a:hover{
+    color: yellow;
+    transition: 10ms;
+    transform: scale(90);
+    font-size: 24px;
+}

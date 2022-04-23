@@ -10,5 +10,5 @@ class Person(models.Model):
     mobile_number = models.CharField(max_length=11)
 
     def __str__(self):
-        return self.id
+        return self.name
     
