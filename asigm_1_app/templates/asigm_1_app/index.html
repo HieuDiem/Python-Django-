@@ -12,6 +12,7 @@
     <ul>
         {% for person in person_list %}
         <li>
+            <!-- <a href="/asigm_1_app/{{person.id}}/"></a> -->
             <a href="{% url 'asigm_1_app:detail' person.id %}">
                 {{ person.name }}
             </a>

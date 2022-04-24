@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add View</title>
+</head>
+
+<body>
+    <form action="{% url 'asigm_1_app:useradd' %}" method="post"> 
+        {% csrf_token %}
+        <h3> THEM DU LIEU </h3>
+        <div class="form_group">
+            <label for="{{ useradd.id.id_for_lable }}">ID: </label>
+            <input type="text", name="id">
+            {{ useradd.id }}
+        </div>
+        <div class="form_group">
+            <label for="{{ useradd.name.id_for_lable }}">NAME: </label>
+            <input type="text", name="name">
+            {{ useradd.name }}
+        </div>
+        <div class="form_group">
+            <label for="{{ useradd.age.id_for_lable }}">AGE: <label>
+            <input type="text", name="age">
+            {{ useradd.age }}
+        </div>
+        <div class="form_group">
+            <label for="{{ useradd.address.id_for_lable }}">ADDRESS: </label>
+            <input type="text", name="address">
+            {{ useradd.address }}
+        </div>
+        <div class="form_group">
+            <label for="{{ useradd.mobile_number.id_for_lable }}">MOBILE: </label>
+            <input type="text", name="mobile_number">
+            {{ useradd.mobile_nuber }}
+        </div>
+        <div class="form_group">
+            <input type="submit" value="Submit"/>
+        </div>
+        
+    </form>
+</body>
+</html>
